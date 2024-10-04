@@ -21,7 +21,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<dynamic> productList = [];
+  // List<dynamic> productList = [];
   List<dynamic> dataList = [
     {
       "username": "adventure_expert",
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
   void initState(){
     _updateAppbar();
     super.initState();
-    getProducts();
+    // getProducts();
   }
 
   void _updateAppbar() {
@@ -267,15 +267,15 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void getProducts() async {
-    var result = await STM().get(context, Str().loading, 'products');
-    print(result);
-
-    setState(() {
-
-      productList = result['products'];
-    });
-  }
+  // void getProducts() async {
+  //   var result = await STM().get(context, Str().loading, 'products');
+  //   print(result);
+  //
+  //   setState(() {
+  //
+  //     productList = result['products'];
+  //   });
+  // }
 
 
 

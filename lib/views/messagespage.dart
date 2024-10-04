@@ -28,8 +28,17 @@ class _MessagesPageState extends State<MessagesPage> {
             style: Sty().mediumText,
           ),
           actions: [
-            Image.asset('assets/video-camera.png'),
-            SvgPicture.asset('assets/edit_icon.svg')
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Image.asset('assets/video-camera.png'),
+                  SizedBox(width: 5,),
+                  SvgPicture.asset('assets/edit_icon.svg',height: 20,width: 20,)
+                ],
+              ),
+            ),
+
           ]),
       backgroundColor: Clr().white,
       body: SingleChildScrollView(

@@ -58,21 +58,27 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_native_splash:
 
+
 flutter_launcher_icons:
     android: "launcher_icon"
     background_color: "#ffffff"
     ios: true
     remove_alpha_ios: true
     image_path: "assets/Instagramclone_logo.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash_logo.png
+  #background_image: "assets/Instagram_logo_splash.png"
+  android_12:
+    image: assets/splash_logo.png
+
+
+    web: false
+
     #flutter pub run flutter_launcher_icons:main
 
 
-flutter_native_splash:
-    color: "#ffffff"
-    image: "assets/heart_.png"
-    android: true
-    ios: true
-    icon_background_color: "#ffffff"
     #flutter pub run flutter_native_splash:create
 
 # For information on the generic Dart part of this file, see the
